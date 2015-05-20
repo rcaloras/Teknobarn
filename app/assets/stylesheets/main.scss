@@ -5,7 +5,36 @@ body{
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	background-image: image_url('bg.jpg');
-	>div{
+	font-family: Helvetica,Arial;
+	div{
 		width: 100%;
 	}
+	#yearofthegoat{
+		font-size: 50px;
+		font-weight: bold;
+	}
+	#events{
+		padding-top: 20px;
+		font-size: 40px;
+		text-shadow: 1px 1px 1px black;
+		#date{
+			font-size: 160px;
+			text-shadow: 2px 2px 1px black;
+		}
+		#events-list{
+			padding-top: 40px;
+			line-height: 50px;
+		}
+
+	}
+}
+
+.blueish{
+	color:#30405E;
+}
+.lighterblueish{
+	color:#35507C;
+}
+.redish{
+	color:#9C3F54;
 }
