@@ -2,6 +2,8 @@
 
 ENV['RAILS_ENV'] ||= 'production'
 ENV['HOME'] ||= `echo ~`.strip
+ENV['GEM_HOME'] = File.expand_path('~/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0')
+ENV['GEM_PATH'] = File.expand_path('~/.rbenv/versions/2.2.2/lib/ruby/gems/2.2.0') + ":" + '/usr/lib/ruby/gems/1.8'
 
 require 'fcgi'
 require File.join(File.dirname(__FILE__), '../config/environment.rb')
