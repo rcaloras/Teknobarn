@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  get 'users/rsvp' => 'users#rsvp'
   resources :users
 
   root 'welcome#index'

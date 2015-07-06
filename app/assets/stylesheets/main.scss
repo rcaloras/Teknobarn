@@ -1,13 +1,16 @@
 body{
 	text-align: center;
-	background-attachment: fixed;
-	background-color: black;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	background-image: image_url('bg.jpg');
 	font-family: Helvetica,Arial;
+	background-color: black;
 	div{
 		width: 100%;
+	}
+	div#background{
+		background-image: image_url('bg.jpg');
+		width: 100%;
+		position: fixed;
+		height:100%;
+		background-position: center;
 	}
 	#yearofthegoat{
 		font-size: 50px;
@@ -30,6 +33,12 @@ body{
 	#end-pic{
 		background-image: image_url('teknobarn_pic.jpg');
 		width:100%;
+	}
+	.hero{
+		width: 100%;
+		img{
+			width:80%;
+		}
 	}
 }
 

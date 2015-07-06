@@ -1,0 +1,11 @@
+<div id='rsvp'>
+<h1>RSVP</h1>
+
+<%= form_tag do %>
+	<%= radio_button_tag(:response, "attending") %>
+	<%= label_tag(:response_attending, "I will be attending Teknobarn 2015.") %>
+	<br>
+	<%= radio_button_tag(:response, "not_attending") %>
+	<%= label_tag(:response_not_attending, "I will not be attending") %>
+<% end %>
+</div>
