@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
 
   def send_invite
     UserMailer.invite_email(self).deliver_now
+    self.invite_sent = true
+    self.save!
   end
 
 end
