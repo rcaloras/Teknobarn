@@ -13,13 +13,6 @@
 
      s = skrollr.init()
 
-     //Grab all elements we are going to manipulate
-     goat_logo = $('#goat_logo');
-
-
-     // goat_logo.attr('data-0','opacity:0');
-     goat_logo.attr('data-500','opacity:0');
-
    });
 
    // The rest of the code goes here!

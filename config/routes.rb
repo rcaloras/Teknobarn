@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
-  get 'users/rsvp' => 'users#rsvp'
+  get 'users/rsvp/:user_id' => 'users#forward_user'
+  get 'users/rsvp/' => 'users#rsvp'
+  post 'users/rsvp' => 'users#rsvp_save'
   resources :users
 
   root 'welcome#index'

@@ -9,7 +9,6 @@ server 'andrewweist.com', user: 'aweist13', roles: %w{app db web}
 
 set :tmp_dir, "/home/aweist13/tmp"
 
-
 # role-based syntax
 # ==================
 

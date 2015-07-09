@@ -2,8 +2,57 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div#rsvp{
-	background-color:white;
-	text-align: left;
-	padding:10px;
+body{
+  text-align: center;
+  font-family: helvetica, arial;
+  background-color: #1F1F1F;
+  color: #BBB;
+  text-shadow: 1px 1px 1px #000;
+  font-size:20px;
+}
+
+#header{
+  width:100%;
+  font-size: 30px;
+  padding-bottom: 30px;
+  img{
+    height: 100px;
+  }
+}
+
+#rsvp{
+  display: inline-block;
+  line-height: 2em;
+  input{
+    padding: 10px 20px 10px;
+    background-color: #B65201;
+    border:none;
+    color: #BBB;
+    text-shadow: 1px 1px 0px black;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover{
+      background-color: #A44A01;
+    }
+  }
+  .submit_rsvp{
+    display:none;
+  }
+}
+
+#details{
+ padding:0px 100px;
+}
+
+.center{
+  text-align: center;
+}
+
+.left{
+  text-align: left;
+  display: inline-block;
+}
+
+.orange{
+  color:#B65201;
 }

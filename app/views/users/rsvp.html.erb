@@ -1,11 +1,41 @@
+<div id='header'>
+  <%= image_tag 'teknobarn_one_line.png' %>
+  <br>
+  Aug 21-23, 2015
+  <br>
+  Leesport, PA
+</div>
 <div id='rsvp'>
-<h1>RSVP</h1>
-
-<%= form_tag do %>
-	<%= radio_button_tag(:response, "attending") %>
+<%= form_tag  do %>
+  <div class='left'>
+  RSVP for <span class='orange'><%= @user.full_name%></span>
+  <br>
+	<%= radio_button_tag(:response, "attending",@user.rsvp) %>
 	<%= label_tag(:response_attending, "I will be attending Teknobarn 2015.") %>
 	<br>
-	<%= radio_button_tag(:response, "not_attending") %>
+	<%= radio_button_tag(:response, "not_attending",!@user.rsvp) %>
 	<%= label_tag(:response_not_attending, "I will not be attending") %>
+  </div>
+  <div id="details" class="center">
+  <br>
+  PLEASE READ
+  <br>
+  Welcome to the madness!  You're one step away from the best weekend of the year.
+  <br>
+  After hitting the submit button below, please remit payment via Venmo to Andrew Weist (@aweist) in the amount of $85.  
+  A bunch of really smart people got together in a room for a weekend and figured out that is what it's going to cost to put on this year's spectacle.
+  If Venmo absolutely isn't an option for you, please let him know (andrew.weist@gmail.com), and you can arrange an alternative form of payment.
+  <br>
+  <br>
+  This year will be <b><u>tent camping only</u></b> due to the anticipated number of attendies not being able to fit in the Weist household.  Please let Andy know if you have any serious issues with camping (allergies, etc.), or will have difficulty procuring a tent to use.  We'll have plenty of tent space as long as we plan ahead.
+  <br>
+  <br>
+  Now hit submit and let the countdown begin
+  </div>
+  <div class="submit_rsvp center">
+    <%= submit_tag "Submit"%>
+  </div>
 <% end %>
 </div>
+<br>
+<br>
