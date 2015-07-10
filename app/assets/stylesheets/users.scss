@@ -60,6 +60,32 @@ body{
 }
 
 
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"] + label {
+    font-family:Arial, sans-serif;
+}
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 14px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:#BBB;
+}
+
+input[type="radio"]:checked + label span{
+     background-color:#B65201;
+}
+
+
 @media only screen and (max-device-width: 480px) {
   #header{
     font-size:60px;
@@ -68,9 +94,11 @@ body{
       width: 100%;
     }
   }
+
   #details{
     padding:0px 10px;
   }
+
   #rsvp{
     font-size:40px;
     input[type=submit]{
@@ -78,5 +106,10 @@ body{
       font-size:40px;
       text-shadow:none;
     }
+  }
+
+  input[type="radio"] + label span {
+    width:38px;
+    height:38px;
   }
 }

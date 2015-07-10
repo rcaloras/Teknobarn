@@ -11,10 +11,10 @@
   RSVP for <span class='orange'><%= @user.full_name%></span>
   <br>
 	<%= radio_button_tag(:response, "attending",@user.rsvp) %>
-	<%= label_tag(:response_attending, "I will be attending Teknobarn 2015.") %>
+  <label for="response_attending"><span></span>I will be attending Teknobarn 2015.</label>
 	<br>
 	<%= radio_button_tag(:response, "not_attending") %>
-	<%= label_tag(:response_not_attending, "I will not be attending") %>
+	<label for="response_not_attending"><span></span>I will not be attending</label>
   </div>
   <div id="details" class="center">
   <br>
