@@ -7,7 +7,7 @@
 </div>
 <div id='rsvp'>
 <%= form_tag  do %>
-  <div class='left'>
+  <div>
   RSVP for <span class='orange'><%= @user.full_name%></span>
   <br>
 	<%= radio_button_tag(:response, "attending",@user.rsvp) %>
@@ -32,6 +32,7 @@
   <br>
   Now hit submit and let the countdown begin
   </div>
+  <br>
   <div class="submit_rsvp center">
     <%= submit_tag "Submit"%>
   </div>

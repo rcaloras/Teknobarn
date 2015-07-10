@@ -10,8 +10,9 @@
 
    // Listen for the jQuery ready event on the document
    $(function() {
-
-     s = skrollr.init()
+      if(typeof skrollr != 'undefined'){
+        s = skrollr.init()
+      }
 
    });
 
