@@ -10,4 +10,11 @@ class User < ActiveRecord::Base
     self.save!
   end
 
+  def self.send_invites
+    users = User.where(:invite_sent => nil)
+    users.each do |user|
+      user.send_invite
+    end
+  end
+
 end
