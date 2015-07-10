@@ -23,13 +23,12 @@ body{
 #rsvp{
   display: inline-block;
   line-height: 2em;
-  input{
+  input[type=submit]{
     padding: 10px 20px 10px;
     background-color: #B65201;
     border:none;
     color: #BBB;
     text-shadow: 1px 1px 0px black;
-    font-size: 16px;
     font-weight: bold;
     &:hover{
       background-color: #A44A01;
@@ -55,4 +54,21 @@ body{
 
 .orange{
   color:#B65201;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  #header{
+    img{
+      height: auto;
+      width: 100%;
+    }
+  }
+  #details{
+    padding:0px 10px;
+  }
+  #rsvp{input[type=submit]{
+    width: 33%;
+    font-size:20px;
+  }}
 }
