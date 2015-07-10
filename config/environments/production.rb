@@ -77,19 +77,31 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.delivery_method = :smtp
-  # SMTP settings for gmail
-  config.action_mailer.smtp_settings = {
-   :address              => "smtp.gmail.com",
-   :port                 => 587,
-   :user_name            => ENV['GMAILUSER'],
-   :password             => ENV['GMAILPASS'],
-   :authentication       => "plain",
-  :enable_starttls_auto => true
+  # Defaults to:
+  # config.action_mailer.sendmail_settings = {
+  #   location: '/usr/sbin/sendmail',
+  #   arguments: '-i -t'
+  # }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_options = {
+    :from                 => 'noreply@teknobarn.com',
+    :reply_to             => 'andrew.weist@gmail.com'
   }
 
-  config.action_mailer.default_options = {
-   :reply_to             => "andrew.weist@gmail.com"
-  }
+  # config.action_mailer.delivery_method = :smtp
+  # # SMTP settings for gmail
+  # config.action_mailer.smtp_settings = {
+  #  :address              => "smtp.gmail.com",
+  #  :port                 => 587,
+  #  :user_name            => ENV['GMAILUSER'],
+  #  :password             => ENV['GMAILPASS'],
+  #  :authentication       => "plain",
+  # :enable_starttls_auto => true
+  # }
+
+  # config.action_mailer.default_options = {
+  #  :reply_to             => "andrew.weist@gmail.com"
+  # }
 
 end
