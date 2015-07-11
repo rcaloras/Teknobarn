@@ -114,3 +114,17 @@ input[type="radio"]:checked + label span{
     height:38px;
   }
 }
+
+.users{
+  text-align:left;ew
+  li{
+    list-style: none;
+  }
+  tr:hover{
+    background-color: #888;
+    cursor: pointer;
+  }
+  td,th{
+    padding-right:40px;
+  }
+}
