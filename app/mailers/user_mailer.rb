@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: 'info@teknobarn.com'
+  default from: '"Teknobarn" <info@teknobarn.com>'
 
   def invite_email(user)
     @user = user
