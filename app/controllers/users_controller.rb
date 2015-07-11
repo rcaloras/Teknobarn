@@ -35,4 +35,11 @@ def rsvp_save
   redirect_to controller:'welcome', action:'index'
 end
 
+def send_invites
+  if request.get?
+  else
+    User.send_invites
+  end
+end
+
 end
