@@ -8,7 +8,7 @@ def create
 end
 
 def show
-  @users = User.all
+  @users = User.all.order(:last_name)
 end
 
 def forward_user
