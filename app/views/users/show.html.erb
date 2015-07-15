@@ -31,4 +31,9 @@
       </td>
     </tr>
   <% end %>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><%= @users.where(:rsvp => true).count %></td>
+  </tr>
 </table>
