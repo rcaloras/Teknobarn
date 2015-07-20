@@ -1,0 +1,37 @@
+body{
+  background-image: image_url('bg.jpg');
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(165, 165, 165);
+  color:#1D1D1D;
+  li{
+    list-style: none;
+  }
+  h2{
+    padding:20px;
+  }
+  #description{
+    background-color: white;
+    color:#303030;
+    margin:0px 100px;
+    font-size: 20px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 20px black;
+    text-shadow:none;
+  }
+  iframe{
+    border:none;
+    body{
+      background-color: black!important;
+    }
+  }
+}
+
+.blueish{
+  color:#30405E;
+}
+.lighterblueish{
+  color:#35507C;
+}
+.redish{
+  color:#9C3F54;
+}

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   post 'users/rsvp' => 'users#rsvp_save'
   get 'users/send_invites' => 'users#send_invites'
   post 'users/send_invites' => 'users#send_invites'
+  get 'about' => 'welcome#about'
 
   resources :users
 
