@@ -3,6 +3,11 @@
 <table class="users" cellspacing=0 cellpadding = 0>
   <tr>
     <th>
+    </th>
+    <th>
+      ID
+    </th>
+    <th>
       Name
     </th>
     <th>
@@ -15,8 +20,14 @@
       Clicked
     </th>
   </tr>
-  <% @users.each do |user| %>
+  <% @users.each_with_index do |user, index| %>
     <tr>
+      <td>
+        <%= index+1%>
+      </td>
+      <td>
+        <%= user.id %>
+      </td>
       <td>
         <%= user.full_name %>
       </td>
@@ -32,6 +43,8 @@
     </tr>
   <% end %>
   <tr>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
     <td><%= @users.where(:rsvp => true).count %></td>
